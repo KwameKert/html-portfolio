@@ -44,13 +44,16 @@ header ul {
     align-items: center;
     padding-top: 20px;
 }
+li{
+    list-style: none;
+}
 
-header ul li {
+.links {
     position: relative;
     list-style: none;
 }
 
-header ul li a{
+.links a{
     position: relative;
     margin: 0 15px;
     text-decoration: none !important;
@@ -60,11 +63,11 @@ header ul li a{
     transition: 0.6s;
 }
 
-header ul li a:hover{
+.links a:hover{
     color: #fff;
 }
 
-header ul li:after {
+.links:after {
     content: '';
     display: block;
     margin: auto;
@@ -74,7 +77,7 @@ header ul li:after {
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
   }
-  header ul li:hover:after {
+  .links:hover:after {
     width: 75%;
     background: #fff;
   }
@@ -96,17 +99,31 @@ header ul li:after {
   }
 
   .name{
-      font-size:3em;
-      font-weight: 600;
+      font-size:5em;
+      font-weight: 900;
+      letter-spacing: 2px;
   }
 
   .headline{
-    font-size:2em;
+    font-size:4em;
     font-weight: 700;
+    color: #97b0ca;
   }
 
   .intro{
+    margin-top: 50px;
     width: 50%;
     text-align: justify;
+    color: #b7babd;
 
   }
+
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #789fa5;
+    border-color:  #789fa5;
+}
+  .btn-outline-primary{
+    color: #6c7fc5;
+    border-color:  #6c7fc5;
+}
